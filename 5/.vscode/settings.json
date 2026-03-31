@@ -1,0 +1,11 @@
+{
+    "clangd.path": "/opt/homebrew/opt/llvm/bin/clangd",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}",
+        "--clang-tidy",
+        "--header-insertion=iwyu",
+        "--background-index"
+    ],
+    // Disable the bundled C/C++ IntelliSense engine to avoid conflicts with clangd
+    "C_Cpp.intelliSenseEngine": "disabled"
+}
